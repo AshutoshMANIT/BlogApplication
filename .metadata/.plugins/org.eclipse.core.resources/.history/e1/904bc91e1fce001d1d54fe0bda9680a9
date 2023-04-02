@@ -1,0 +1,8 @@
+package com.app.blog.services;
+
+public interface UserService {
+
+
+public createUser(User user);
+
+}

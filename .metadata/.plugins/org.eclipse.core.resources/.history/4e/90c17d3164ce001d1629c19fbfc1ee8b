@@ -1,0 +1,5 @@
+package com.app.blog.controllers;
+
+public class UserController {
+
+}
