@@ -30,6 +30,34 @@
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
 
+		<!-- Model Mapper added -->
+		
+		<dependency>
+    <groupId>org.modelmapper</groupId>
+    <artifactId>modelmapper</artifactId>
+    <version>3.0.0</version>
+</dependency>
+		
+<!-- MAodel mapper end -->
+		<!-- dependency for Validation  -->
+		<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-validation</artifactId>
+    <!-- <version>3.0.5</version> -->
+</dependency>
+		<!-- Dependency for validation ended -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>

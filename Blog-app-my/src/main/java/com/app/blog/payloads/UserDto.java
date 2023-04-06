@@ -1,13 +1,19 @@
 package com.app.blog.payloads;
 
-
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 public class UserDto {
 
 	private Integer id;
+	@NotEmpty
 	private String name;
+	@Email
 	private String email;
+	@NotNull
 	private String password;
+	@NotNull
 	private String about;
 	@Override
 	public String toString() {
