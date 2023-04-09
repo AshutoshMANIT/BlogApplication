@@ -3,15 +3,17 @@ package com.app.blog.payloads;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 public class UserDto {
 
 	private Integer id;
 	@NotEmpty
+	@Size(min =4, message="usen name must be of four character")
 	private String name;
-	@Email
+	@Email(message="email is not valid")
 	private String email;
-	@NotNull
+	@NotEmpty(message="pswrd shoul not be blank")
 	private String password;
 	@NotNull
 	private String about;
