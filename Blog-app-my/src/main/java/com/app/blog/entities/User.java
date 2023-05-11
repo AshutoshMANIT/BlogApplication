@@ -1,10 +1,15 @@
 package com.app.blog.entities;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -19,6 +24,9 @@ public class User {
 	private String email;
 	private String password;
 	private String about;
+	@OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
+	private List<Post> post=new ArrayList<>();
+	
 	public User(String name, String email, String password, String about) {
 		super();
 		this.name = name;
